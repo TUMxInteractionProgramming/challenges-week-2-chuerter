@@ -1,0 +1,125 @@
+/*Global*/ 
+
+            /*  COLOR SCHEME:
+                Background => background-color: lightgray;
+                Primary Text =>          color: black;    contrast ratio = 14
+                Primary Color =>    background: #03A9F4;
+                Primary Text Color =>    color: black;    contrast ratio = 8
+                Accent Color =>     background: #FFEB3B;
+                Accent Text Color =>     color: black;    contrast ratio = 17.2 */
+            
+            *{
+                font-family: 'Roboto', Arial, sans-serif;
+                background-color: lightgray;
+                margin: 0px 0px 0px 0px;
+                padding: 0px 0px 0px 0px;
+            }
+            
+            button{
+                background-color: #FFEB3B; /*Accent Color*/
+                color: black;         /*Accent Text Color*/
+            }
+
+            button, .location{
+                text-transform: uppercase;
+            }
+
+
+/*App bar*/
+           h1{
+                background-color: #03A9F4; /*Primary Color*/
+                color: white;
+            } 
+
+
+/*Channel list*/
+            li{
+                background-color: white;
+                padding: 16px;
+                font-size: 16px;
+                box-sizing: border-box;
+                height: 56px;
+                border: 1px solid lightgray;
+            }
+            
+            li img{
+                background-color: white;
+                vertical-align: middle;
+            }
+            
+            .selectedchannel{
+                color: #03A9F4;
+                border-left: 4px solid #03A9F4;
+            }
+
+
+/*Tab bar*/
+            #tab-bar{
+                background-color: white;
+                text-align: center;
+            }
+
+            #tab-bar button {
+                text-transform: uppercase;
+                background: white;
+                border: none;
+                font-size: 13px;
+                width: 32%; /*better for scaling as 33%*/
+                height: 72px;
+                padding: 16px;
+            }
+
+            #tab-bar .selected {
+                text-transform: uppercase;
+                background: white;
+                border-bottom: 4px solid #03A9F4; /*highlighted*/
+                color: #03A9F4;                   /*highlighted*/
+                font-size: 13px;
+                width: 32%; /*better for scaling as 33%*/
+                height: 72px;
+                padding: 16px;
+            }
+
+            #tab-bar button img, #tab-bar .selected img{
+                background-color: white;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 4px;
+            }
+
+
+/*Messages*/
+            .message{
+                width: 80%;
+                margin-bottom: 8px;
+                margin-left: 2.5%;
+            }
+            
+            .ownmessage{
+                width: 80%;
+                margin-bottom: 8px;
+                margin-left: 17.5%;
+            }
+
+            .message h3, .ownmessage h3{ /*Metadata*/
+                font-size: medium;
+            }
+
+            .message h3 a, .ownmessage h3 a{
+                color: black;
+            }
+            
+            .message p, .ownmessage p{ /*Messages itselfs*/
+                background-color: white;
+                padding: 16px;
+            }
+            .message button, .ownmessage button{
+                background: #CDDC39;
+                color: black;
+                text-transform: uppercase;
+            }
+            .message .emphasis, .ownmessage .emphasis{
+                font-size: larger;
+                font-style: normal;
+            }
